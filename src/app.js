@@ -13,7 +13,8 @@ const forecast = require('./utils/forecast')
 
 const app = express()//make the application
 
-
+//for heroku video 67
+const port = process.env.PORT || 3000
 
 //video 45 serving static assets
 //define parhs
@@ -128,8 +129,8 @@ app.get('*', (req, res) => {
 
 
 //to start the server
-app.listen(3000 , () => {
-    console.log('server is up on port')
+app.listen(port , () => {
+    console.log('server is up on port ' + port)
 })
 
 //run this in browser by opening url localhost:3000
