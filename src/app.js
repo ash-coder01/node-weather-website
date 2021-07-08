@@ -36,7 +36,7 @@ app.use(express.static(publicDirectoryPath))//above same line
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'Andrew'//do using ejs, dynamic
+        name: 'Ash'//do using ejs, dynamic
     }) //redering hbs file, works only after removing/deleting html file
 })
 
